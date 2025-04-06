@@ -17,7 +17,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
     - name: Fetch latest data
-      run: main.py
+      run: python main.py
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
