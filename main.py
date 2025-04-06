@@ -8,7 +8,5 @@ soup = bs4.BeautifulSoup(r.text, 'html.parser')
 # Find the table with tariffs
 table = soup.find('table')
 
-print(table)
-
 with open('tariffs.html', 'w') as f:
-    f.write(r.text)
+    f.write(table)
