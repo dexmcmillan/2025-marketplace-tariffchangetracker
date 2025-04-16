@@ -6,7 +6,7 @@ r = requests.get('https://www.canada.ca/en/department-finance/news/2025/03/list-
 soup = bs4.BeautifulSoup(r.text, 'html.parser')
 
 # Find the table with tariffs
-table = soup.find('table').
+table = soup.find('table')
 
 with open('tariffs.html', 'w') as f:
     f.write(str(table))
